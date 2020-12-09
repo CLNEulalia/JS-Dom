@@ -114,7 +114,7 @@ of an element in our HTML
 
 ```js
 let titleElement = document.getElementById("title");
-titleElement.innerHTML = "Hello! "
+titleElement.innerHTML = "Hello!"
 ```
 
 The above code will start at the document (top of the tree), and look for an
@@ -127,7 +127,7 @@ The `getElementById` method returns a single Node item; the
 
 ```js
 let paragraphElements = document.getElementsByClassName("paragraph");
-paragraphElements.innerHTML = "Hello paragraphs! "
+
 ```
 
 The above code snippet returns a NodeList (like an Array) of every element with
@@ -144,7 +144,7 @@ meaning it too returns a list of Nodes.
 
 ```js
 let spanElements = document.getElementsByTagName("span");
-spanElements.innerHTML = "Hello Span!"
+
 ```
 
 The above snippet returns every `span` element on the page and saves it to the
