@@ -88,6 +88,9 @@ attributes, and [many more things](https://www.w3schools.com/js/js_htmldom.asp).
 Most of what you do with client-side javascript is going to revolve around
 manipulating the DOM.
 
+
+We will be using Manipulating the DOM in Real Time in our Event Listeners class later today - clicking buttons to change background color and other CSS style options!
+
 ## Getting Data from the DOM
 
 There are two groups of methods you can use to get elements from the DOM. We'll
@@ -120,15 +123,18 @@ titleElement.innerHTML = "Hello!"
 The above code will start at the document (top of the tree), and look for an
 element with an id called `title` and save it in the variable `titleElement`
 
+We can then edit the HTML within the document ('innerHTML') to whatever we would like
+
 **`getElementsByClassName`**
 
 The `getElementById` method returns a single Node item; the
 `getElementsByClassName` returns a NodeList, which is like an Array of Nodes.
 
 ```js
-let paragraphElements = document.getElementsByClassName("paragraph");
-
+let classElements = document.getElementsByClassName("text");
+console.log(classElements)
 ```
+We are not going to update every 'Text' class element here, instead we will log all of them into the console
 
 The above code snippet returns a NodeList (like an Array) of every element with
 a class of 'paragraph' and saves it to the `paragraphElements` variable. Notice
@@ -149,6 +155,8 @@ let spanElements = document.getElementsByTagName("span");
 
 The above snippet returns every `span` element on the page and saves it to the
 `spanElements` variable.
+
+There are a lot of similarities between this and filtering through an array (remember that from yesterday?) but it is certainly not going to be as useful in our programming journey
 
 ### `querySelector` (10 min / 0:50)
 
@@ -209,6 +217,9 @@ let title = document.querySelectorAll("h2");
 ```
 
 The above code snippet would return a list of all `h2` elements on the page.
+
+Hey, remember .map from the Array lesson? We can use .map to display a lot of images/other data onto a page, the way Amazon or Ebay display all of their items after a search (and by the way, a Searchbar is basically just a nice UI friendly Filter, isn't it?!)
+
 
 ## Setting Data in the DOM
 
