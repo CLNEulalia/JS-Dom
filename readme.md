@@ -2,6 +2,8 @@
 
 
 # The DOM & JavaScript
+## Dec 10, 2020
+
 
 ## Learning Objectives
 
