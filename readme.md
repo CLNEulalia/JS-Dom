@@ -114,7 +114,7 @@ of an element in our HTML
 
 ```js
 let titleElement = document.getElementById("title");
-element.innerHTML = "Hello! "
+titleElement.innerHTML = "Hello! "
 ```
 
 The above code will start at the document (top of the tree), and look for an
