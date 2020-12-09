@@ -192,6 +192,8 @@ that matches that selector.
 let title = document.querySelector(".title");
 ```
 
+This is one way we can add Click effects to buttons on our sites!
+
 We'll only get one element back and it will always be the first element that
 matches the selector (in this case, `.title`). If we have more than one element
 in the page with that selector and we want to retrieve them all, then we'd use
